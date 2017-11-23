@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         //dasdasdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaa
 
         //ferdifefeifefie
-
+//s
         //adasdasd
 
         gonderbutton.setOnClickListener(new View.OnClickListener() {
