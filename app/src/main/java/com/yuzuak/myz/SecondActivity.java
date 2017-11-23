@@ -23,7 +23,8 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.second_layout);
         TextView takim1 = (TextView) findViewById(R.id.takim1);
         Intent intent = getIntent();
-        takim1.setText(intent.getStringExtra("takimadi"));
+        String teamName = intent.getStringExtra("takimadi");
+        takim1.setText(teamName);
 
 
     }

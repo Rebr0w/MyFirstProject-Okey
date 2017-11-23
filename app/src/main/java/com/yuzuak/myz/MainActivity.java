@@ -15,6 +15,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.yuzuak.myz.utility.Constant;
+
 public class MainActivity extends AppCompatActivity {
     EditText takimismi1, takimismi2, takimismi3, takimismi4;
     GridLayout gridtext;
@@ -47,29 +49,13 @@ public class MainActivity extends AppCompatActivity {
         gonderbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, SecondActivity.class);
-                intent.putExtra("a", takimismi1.getText());
-                startActivity(intent);
-            }
-        });
-
-        //dasdasdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaa
-
-        //ferdifefeifefie
-//s
-        //adasdasd
-
-        gonderbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
                 if (takimismi1.getText().toString().isEmpty() || takimismi2.getText().toString().isEmpty() || takimismi3.getText().toString().isEmpty() || takimismi4.getText().toString().isEmpty()) {
                     Toast.makeText(context, "LÜTFEN TAKIM İSMİ GİRİNİZ.", Toast.LENGTH_SHORT).show();
                 } else {
 
-                    Intent intent = new Intent(context, SecondActivity.class);
-                    intent.putExtra("takimadi", takimismi1.getText());
-
+                    Intent intent = new Intent(context, TeamActivity.class);
+                    intent.putExtra(Constant.TEAM_NAME_KEY, takimismi1.getText().toString());
                     startActivity(intent);
                 }
 
