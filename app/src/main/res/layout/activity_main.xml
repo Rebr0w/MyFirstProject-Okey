@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yuzuak.myz.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/oyunturu"
+        android:text="Oyun Türü "
+        android:textOff="Eşsiz"
+        android:textOn="Eşli"
+        android:showText="true"
+        android:checked="false"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Takım ismi giriniz"
+        android:id="@+id/takimismi1"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Takım ismi giriniz"
+        android:id="@+id/takimismi2"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:columnCount="1"
+        android:rowCount="2"
+        android:id="@+id/gridtext">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Takım ismi giriniz"
+            android:id="@+id/takimismi3"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Takım ismi giriniz"
+            android:id="@+id/takimismi4"/>
+
+    </GridLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temizle"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/temizlebutton"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gönder Gelsin"
+        android:id="@+id/gonderbutton"
+        android:textColor="@color/colorAccent"/>
+
+</LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
