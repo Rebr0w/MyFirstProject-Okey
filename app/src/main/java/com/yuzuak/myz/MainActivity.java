@@ -55,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     Intent intent = new Intent(context, TeamActivity.class);
-                    intent.putExtra(Constant.TEAM_NAME_KEY, takimismi1.getText().toString());
+                    intent.putExtra("name1", takimismi1.getText().toString());
+                    intent.putExtra("name2", takimismi2.getText().toString());
+                    intent.putExtra("name3", takimismi3.getText().toString());
+                    intent.putExtra("name4", takimismi4.getText().toString());
                     startActivity(intent);
                 }
 
